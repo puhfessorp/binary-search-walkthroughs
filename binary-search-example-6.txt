@@ -1,0 +1,50 @@
+[BinarySearchTutor] Input and query were integers; Entering numeric mode
+[BinarySearchTutor] Starting with: [55, 27, 18, 27, 5, 40, 53, 58, 34, 14, 72, 8, 21, 7, 29, 17, 51, 32, 68, 44]
+[BinarySearchTutor] Query: 27
+[BinarySearchTutor] Recalculated middle: floor( (0 + 19) / 2 ) == 9
+
+Iteration 1:
+= = = == == == == == == ** == == == == == == == == == == 
+5 7 8 14 17 18 21 27 27 29 32 34 40 44 51 53 55 58 68 72 
+0 1 2 3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 
+Range: 0 to 19; Middle is index 9 ==> 29
+
+
+[BinarySearchTutor] Have not yet found our query: 27
+[BinarySearchTutor] Reducing search space further
+[BinarySearchTutor] Middle element 29 was 'more than' our query; Discarding right side of search space
+[BinarySearchTutor] Recalculated middle: floor( (0 + 8) / 2 ) == 4
+
+Iteration 2:
+= = = == ** == == == ==                                  
+5 7 8 14 17 18 21 27 27 29 32 34 40 44 51 53 55 58 68 72 
+0 1 2 3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 
+Range: 0 to 8; Middle is index 4 ==> 17
+
+
+[BinarySearchTutor] Have not yet found our query: 27
+[BinarySearchTutor] Reducing search space further
+[BinarySearchTutor] Middle element 17 was 'less than' our query; Discarding left side of search space
+[BinarySearchTutor] Recalculated middle: floor( (5 + 8) / 2 ) == 6
+
+Iteration 3:
+            == ** == ==                                  
+5 7 8 14 17 18 21 27 27 29 32 34 40 44 51 53 55 58 68 72 
+0 1 2 3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 
+Range: 5 to 8; Middle is index 6 ==> 21
+
+
+[BinarySearchTutor] Have not yet found our query: 27
+[BinarySearchTutor] Reducing search space further
+[BinarySearchTutor] Middle element 21 was 'less than' our query; Discarding left side of search space
+[BinarySearchTutor] Recalculated middle: floor( (7 + 8) / 2 ) == 7
+
+Iteration 4:
+                  ** ==                                  
+5 7 8 14 17 18 21 27 27 29 32 34 40 44 51 53 55 58 68 72 
+0 1 2 3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 
+Range: 7 to 8; Middle is index 7 ==> 27
+
+
+[BinarySearchTutor] Found our query at index 7 ==> 27
+[BinarySearchTutor] Total search iterations: 4

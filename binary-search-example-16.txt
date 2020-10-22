@@ -1,0 +1,63 @@
+[BinarySearchTutor] Input and query were integers; Entering numeric mode
+[BinarySearchTutor] Starting with: [14, 81, 42, 42, 64, 89, 30, 49, 72, 64, 48, 6, 25, 92, 63, 63, 28, 26, 75, 5]
+[BinarySearchTutor] Query: 23
+[BinarySearchTutor] Recalculated middle: floor( (0 + 19) / 2 ) == 9
+
+Iteration 1:
+= = == == == == == == == ** == == == == == == == == == == 
+5 6 14 25 26 28 30 42 42 48 49 63 63 64 64 72 75 81 89 92 
+0 1 2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 
+Range: 0 to 19; Middle is index 9 ==> 48
+
+
+[BinarySearchTutor] Have not yet found our query: 23
+[BinarySearchTutor] Reducing search space further
+[BinarySearchTutor] Middle element 48 was 'more than' our query; Discarding right side of search space
+[BinarySearchTutor] Recalculated middle: floor( (0 + 8) / 2 ) == 4
+
+Iteration 2:
+= = == == ** == == == ==                                  
+5 6 14 25 26 28 30 42 42 48 49 63 63 64 64 72 75 81 89 92 
+0 1 2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 
+Range: 0 to 8; Middle is index 4 ==> 26
+
+
+[BinarySearchTutor] Have not yet found our query: 23
+[BinarySearchTutor] Reducing search space further
+[BinarySearchTutor] Middle element 26 was 'more than' our query; Discarding right side of search space
+[BinarySearchTutor] Recalculated middle: floor( (0 + 3) / 2 ) == 1
+
+Iteration 3:
+= * == ==                                                 
+5 6 14 25 26 28 30 42 42 48 49 63 63 64 64 72 75 81 89 92 
+0 1 2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 
+Range: 0 to 3; Middle is index 1 ==> 6
+
+
+[BinarySearchTutor] Have not yet found our query: 23
+[BinarySearchTutor] Reducing search space further
+[BinarySearchTutor] Middle element 6 was 'less than' our query; Discarding left side of search space
+[BinarySearchTutor] Recalculated middle: floor( (2 + 3) / 2 ) == 2
+
+Iteration 4:
+    ** ==                                                 
+5 6 14 25 26 28 30 42 42 48 49 63 63 64 64 72 75 81 89 92 
+0 1 2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 
+Range: 2 to 3; Middle is index 2 ==> 14
+
+
+[BinarySearchTutor] Have not yet found our query: 23
+[BinarySearchTutor] Reducing search space further
+[BinarySearchTutor] Middle element 14 was 'less than' our query; Discarding left side of search space
+[BinarySearchTutor] Recalculated middle: floor( (3 + 3) / 2 ) == 3
+
+Iteration 5:
+       **                                                 
+5 6 14 25 26 28 30 42 42 48 49 63 63 64 64 72 75 81 89 92 
+0 1 2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 
+Range: 3 to 3; Middle is index 3 ==> 25
+
+
+[BinarySearchTutor] Have not yet found our query: 23
+[BinarySearchTutor] Search space is exhausted; We have failed to find our query
+[BinarySearchTutor] Total search iterations: 5
